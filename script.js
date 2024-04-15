@@ -5,9 +5,9 @@ function checkPassword() {
     var result = document.getElementById('result');
 
     if (parentPassword === childPassword) {
-        result.innerHTML = '<h1>やったね！</h1><img src="cute-image.webp" alt="かわいい絵" width="512px">';
+        result.innerHTML = '<h1>やったね！</h1><img src="cute-image.webp" alt="かわいい絵" width="300px">';
     } else {
-        result.innerHTML = '<p>パスワードがいっちしませんでした。もういちどためしてね。</p><img src="failed-image.webp" alt="失敗したときの絵" width="256px">';
+        result.innerHTML = '<p>パスワードがいっちしませんでした。もういちどためしてね。</p><img src="failed-image.webp" alt="失敗したときの絵" width="200px">';
     }
 }
 
