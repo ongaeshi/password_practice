@@ -11,7 +11,9 @@
     <div class="container mt-5">
         <h1 class="mb-4">パスワードれんしゅう</h1>
         <div class="row mb-3 align-items-center">
-            <label for="parentPassword" class="form-label">おてほんをにゅうりょく:</label>
+            <div class="col-3">
+                <label for="parentPassword" class="form-label">おてほんをにゅうりょく:</label>
+            </div>
             <div class="col">
                 <input type="password" class="form-control" id="parentPassword" name="parentPassword">
             </div>
@@ -20,7 +22,9 @@
             </div>
         </div>
         <div class="row mb-3 align-items-center">
-            <label for="childPassword" class="form-label">パスワード:</label>
+            <div class="col-3">
+                <label for="childPassword" class="form-label">パスワード:</label>
+            </div>
             <div class="col">
                 <input type="password" class="form-control" id="childPassword" name="childPassword">
             </div>
@@ -28,7 +32,7 @@
                 <span onclick="togglePasswordVisibility('childPassword')" class="toggle-password">&#128065;</span>
             </div>
         </div>
-        <button onclick="checkPassword()" class="btn btn-success">ログイン</button>
+        <button onclick="checkPassword()" class="btn btn-success d-box w-100">ログイン</button>
         <div id="result" class="mt-3"></div>
     </div>
     <script src="script.js"></script>
