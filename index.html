@@ -11,8 +11,10 @@
         <h1>パスワード練習</h1>
         <label for="parentPassword">お手本を入力:</label>
         <input type="password" id="parentPassword" name="parentPassword">
+        <span onclick="togglePasswordVisibility('parentPassword')" class="toggle-password">&#128065;</span>
         <label for="childPassword">パスワード:</label>
         <input type="password" id="childPassword" name="childPassword">
+        <span onclick="togglePasswordVisibility('childPassword')" class="toggle-password">&#128065;</span>
         <button onclick="checkPassword()">ログイン</button>
         <div id="result"></div>
     </div>

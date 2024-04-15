@@ -10,3 +10,12 @@ function checkPassword() {
         result.textContent = '不一致です。もう一度試してください。';
     }
 }
+
+function togglePasswordVisibility(passwordFieldId) {
+    var passwordInput = document.getElementById(passwordFieldId);
+    if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+    } else {
+        passwordInput.type = "password";
+    }
+}
